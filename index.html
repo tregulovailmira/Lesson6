@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div>
-        Control DIV
-    </div>
+    <div class="userFormContainer">
+        <div class="userPhoto">
+            <img src="images/userPhoto.png" alt="photo"></div>
+        <div class="formHead">User Login</div>
+        <form class="loginForm">
 
-    <div>
-        Control DIV22
+            <label for="userEmail">
+                <input type="email" id="userEmail" placeholder="Enter email">
+            </label>
+            <label for="userPassword">
+                <input type="text" id="userPassword" placeholder="Enter password">
+            </label>
+            <button class="buttonLogin">Login</button>
+        </form>
+        <div><a href="#">Forgot Password?</a></div>
     </div>
-
-    <div>
-        Control development DIV
-    </div>
-
 </body>
 </html>
