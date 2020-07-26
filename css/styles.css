@@ -1,3 +1,7 @@
+:root {
+    --img-size: 100px;
+}
+
 body {
     background-color: gray;
     height: 100vh;
@@ -7,18 +11,12 @@ body {
     align-items: center;
 }
 
-.userPhoto {
-    display: flex;
-
-}
-
 .userPhoto img {
-    /*position: relative;*/
-    /*top: -50px;*/
-    width: 100px;
-    height: 100px;
+    width: var(--img-size);
+    height: var(--img-size);
     border-radius: 50%;
     object-fit: cover;
+    margin-top: calc(var(--img-size)-50%);
 }
 
 .userFormContainer, .loginForm {
@@ -31,7 +29,6 @@ body {
 .userFormContainer {
     background-color: white;
     min-width: 300px;
-    /*max-height: 300px;*/
     align-items: center;
 }
 
@@ -51,6 +48,7 @@ body {
 
 .loginForm input {
     border: 1px solid gray;
+    padding-left: 5px;
 }
 
 .loginForm button {
